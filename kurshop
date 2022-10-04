@@ -1,0 +1,76 @@
+public static void main(String[] args) {
+        // TODO code application logic here
+        
+       Scanner input = new Scanner(System.in);
+        
+        
+        System.out.println("to enter shop, press 1");
+        int z = input.nextInt();
+        int x = 0;
+        int x1 = 0;
+        int x2 = 0;
+        int x3 = 0;
+        int x4 = 0;
+        int x5 = 0;
+        int c = 0;
+        int c1 = 0;
+       
+        int p =0;
+        int o=0;
+        while (z==1){
+            System.out.println("Welcome to the kurshop");
+            System.out.println("Press 1 to search for items");
+            
+                x = input.nextInt();    
+                
+             switch (x){
+                 case 1:
+                     
+                     System.out.println("kisses pack:35");   
+                     System.out.println("m&m's pack:15");
+                     System.out.println("coolaid pack: 30");
+                     System.out.println("dynamite pack: 20");
+                     System.out.println("barnuts pack: 50");
+                     System.out.println("please place the amount of kisses you want to buy");
+                     x1 = input.nextInt();
+                     int x1p = (x1*35); 
+                     System.out.println("please place the amount of m&m's you want to buy");
+                     x2 = input.nextInt();
+                     int x2p = (x2*15); 
+                     System.out.println("please place the amount of coolaid you want to buy");
+                     x3 = input.nextInt();
+                     int x3p = (x3*30); 
+                     System.out.println("please place the amount of dynamite you want to buy");
+                     x4 = input.nextInt();
+                     int x4p = (x4*20); 
+                     System.out.println("please place the amount of barnuts you want to buy");
+                     x5 = input.nextInt();
+                     int x5p = (x5*50); 
+                     System.out.println("press any number to see the total cost");
+                     c = input.nextInt();
+                     c1 = (x1p+x2p+x3p+x4p+x5p);
+                     System.out.println("total cost is " +c1);
+                     System.out.println("Please input your cash");
+                     p = input.nextInt();
+                     int p1 = (p - c1);
+                     
+                    
+                    if (p1 < 0){
+                        System.out.println("total amount of change: "+p1);
+                        System.out.println("cash amount is insufficient");
+                        System.out.println("press 1 to return");
+                        o = input.nextInt();
+                   
+                    }
+                    else{
+                        System.out.println("total amount of change: "+p1);
+                        System.out.println("cash is sufficient");
+                        System.out.println("items bought");
+                        System.out.println("press 1 to return to store");
+                        System.out.println("press 2 to stop shopping");
+                        z = input.nextInt();
+                    }    
+                    }    
+                    }
+                    }
+                    }
