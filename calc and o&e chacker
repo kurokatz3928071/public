@@ -1,0 +1,81 @@
+public static void main(String[] args) {
+        // TODO code application logic here
+        
+        Scanner input = new Scanner(System.in);
+       while (true){ 
+           System.out.println("_________________________________");
+        System.out.println("hewwi twis ish Kurophown");
+        System.out.println("inpwut [1] to entwer calculayor");
+        System.out.println("inpwut [2] to entwer odd and eweven chekwer");
+   int c1 = input.nextInt();
+        
+   int c2 = 0;
+        
+   
+   
+switch (c1){
+    case 1:
+
+double x1;
+double x2;
+String x3;
+
+System.out.println ("Whello, thwis ish Calc the Calculatyor");
+System.out.println ("Pwease inpyut 2 numbers");
+System.out.println("_________________________________");
+
+System.out.println ("inpyut your first nyumber:.");
+x1= input.nextDouble();
+System.out.println ("inpyut your second nyumber:");
+
+x2= input.nextDouble();
+System.out.println ("Pwease inpyut your desired owoperation(+,-,*,/)");
+System.out.println("_________________________________");
+x3= input.next();
+
+if (x3.equals("+")){
+System.out.println (x1 + x2);
+System.out.println ("Addwisyon Dyone, pwease pwess [1] to wetuwn");
+c1 = input.nextInt();
+}
+else if (x3.equals("-")){
+System.out.println(x1-x2);
+System.out.println ("Subtwactyun Dyone, pwease pwess [1] to wetuwn");
+c1 = input.nextInt();
+
+}
+else if (x3.equals("*")){
+System.out.println(x1 * x2);
+System.out.println ("Multipwicatyun Dyone, pwease pwess [1] to wetuwn");
+c1 = input.nextInt();
+}
+else if (x3.equals("/")){
+System.out.println(x1 / x2);
+System.out.println ("Dwivwision Dyone, pwease pwess [1] to wetuwn");
+c1 = input.nextInt();
+}
+
+
+
+break;
+            
+case 2:
+System.out.println("_________________________________");
+     System.out.println(" odd or eweven checkwer");
+        System.out.println("Please input a number");
+        System.out.println("_________________________________");
+        
+        double xx1=input.nextDouble();
+        
+        if (xx1 % 2 == 0)
+                System.out.println("number is even");
+        else 
+            System.out.println("number is odd");
+        System.out.println("pwease pwess [1] to wetuwn");
+         c1 = input.nextInt();
+        break;
+       
+}  
+}    
+}   
+}
